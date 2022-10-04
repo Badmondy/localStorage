@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+article{
+    display:flex;
+    justify-content: center;
+    min-width: 100vw;
+    min-height:100vh;
+    align-items: center;
+    background:url('simhallbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    color:black;
+    font-size:200%;
+    top:5%;
+}
+.header img{
+    min-width:5%;
+    width:5%;
+}
+
+
+.welcomeText{
+    display:flex;
+    justify-content: center;
+    min-width:40%;
+    width:30em;
+    padding:5%;
+    gap:1.5em;
+    font-size:.9em;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height:30em;
+    border-radius:3em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.welcomeText button{
+    border:none;
+    border-radius:3em;
+    font-size:150%;
+    padding:1%;
+}
+.welcomeText button:hover{
+    background-color: rgb(136, 143, 143);
+}
+
+.logoutBtn{
+    border:none;
+    border-radius:3em;
+    padding:0.5%;
+}
+
+.logoutBtn:hover{
+    background-color: rgb(136, 143, 143);
+}
+.userInterface{
+    display:none;
+    justify-content: center;
+    min-width:40%;
+    align-items: center;
+    flex-direction: column;
+    min-height:30em;
+    border-radius:3em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap:1em;
+    
+}
+.icon{
+    z-index:3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:rgb(254, 254, 254);
+    width:3em;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 3em;
+    height:3em;
+}
+.userStyle,.passStyle{
+  display:flex;
+
+}
+
+
+.userInterface input{
+    min-width:30%;
+    min-height:2em;
+    border:none;
+    text-indent: 1em;
+    outline:none;
+    color:black;
+    background-color:rgb(254, 254, 254);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
+    font-size:1em;    
+}
+.userInterface button{
+    border:none;
+    border-radius:3em;
+    padding:1%;
+}
+.userInterface button:hover{
+    background-color: rgb(136, 143, 143);
+
+}
+.userInterface h4{
+    margin-bottom:5%;
+}
+.loggedIn{
+    display:none;
+    gap:1em;
+    position: absolute;
+    left:0;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    font-weight: 700;
+    background-color:white;
+    color:rgb(9, 9, 9);
+}
+
+
+.news{
+    display:none;
+    justify-content: center;
+    align-self:center;
+    flex-wrap:wrap;
+    width   :40%;
+    gap:1em;
+    background-color: azure;
+    border-radius:1em;
+    padding:1%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width: 900px){
+    .news{
+        width:80%;
+        margin-top:10%;
+    }
+    .userInterface{
+        width:80%;
+    }
+    .welcomeText{
+        width:80%;
+    }
+    .loggedIn{
+        font-size:100%;
+    }
+    .header{
+        display:none;
+    }
+}
+
+

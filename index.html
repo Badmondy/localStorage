@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+ 
+    <title>Simsällskapet</title>
+  </head>
+  <body>
+
+    <article>
+        <h1 class="header">Simmsällskapet <img src="favicon.png" alt=""></h1>
+      <div class="loggedIn" id="loggedIn">
+        <p id="text"></p>
+        <button onclick="logOut()" class="logoutBtn">Logga ut</button>
+      </div>
+    
+      <div class="welcomeText" id="welcomeScreen"> 
+       
+        <h1> Information & regler</h1>
+        <h3>Yttrandefrihet för medier och tillgänglighetskrav</h3>
+ <h4>Yttrandefrihetsgrundlagens syfte är att garantera rätten för var och en att etablera sig och i radio, tv, film, video och vissa databaser uttrycka sig.</h4>
+<span>I yttrandefrihetslagen används begreppet ”i tråd” som avser till exempel sändningar via internet eller i kabel. För sändningar i tråd har etableringsfriheten ansetts så stark att det har krävt undantag i yttrandefrihetsgrundlagen för att i lag få ställa krav på tillgänglighet för personer med funktionsnedsättning.</span>
+<button class="loginBtn" onclick="logIn()">Logga in</button>
+    </div>
+      <div class="userInterface" id="userInterFace">
+        <h4>Välkommen att logga in!</h4>
+        <div class="userStyle">
+            <div class="icon"><i class="fa-solid fa-user"></i></div>
+       
+        <input type="text" id="namn" name="namn" placeholder="Användarnamn"  /> 
+        </div>
+        
+        <div class="passStyle">
+            <div class="icon"><i class="fa-solid fa-lock"></i>  </div>
+            
+            <input
+              type="password"
+              name="losenord"
+              id="losenord"
+              placeholder="Lösenord"
+              class="losenord"
+            />
+            
+        </div>
+      
+  
+      <button type="submit" class="checker"> Logga in </button> </div>
+      </div>
+      <div class="news" id="news">
+        <h1>Nyheter för dig!</h1>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          egestas, leo ac rhoncus commodo, mi lectus semper urna, at interdum
+          metus odio quis augue. Sed sit amet malesuada neque. Curabitur
+          consectetur luctus erat, vel rutrum ante blandit eget. Proin in
+          egestas velit, et porta sapien. Cras porttitor risus ut condimentum
+          rutrum. Mauris quis sapien in nisi suscipit commodo ac sed libero.
+          Maecenas vehicula elit lacus, vel commodo tortor luctus at. Quisque eu
+          nulla scelerisque, lacinia lacus vel, dictum nisl. Fusce vel mauris
+          vitae est sodales pellentesque ac vel elit. Phasellus lobortis
+          tincidunt odio varius commodo. Duis posuere magna vel leo convallis
+          elementum. Vivamus dignissim, nunc at tincidunt rhoncus, ante mi
+          molestie sapien, sed venenatis risus lectus at nunc. Maecenas
+          fermentum molestie elit in pellentesque. Maecenas tellus tellus,
+          ultricies gravida sapien ornare, consequat ornare erat. Praesent
+          imperdiet ligula eu massa bibendum, egestas ornare leo ultricies.
+          Maecenas turpis sem, vehicula nec nisl quis, fermentum finibus diam.
+          Donec commodo justo eu lacus porttitor porta. Cras sed commodo tortor.
+          Aenean quis velit varius, dictum purus id, fringilla mauris. In sapien
+          purus, sollicitudin id tempus et, dapibus nec est. Curabitur ut
+          sollicitudin sapien. Duis porta, magna id accumsan porta, nisi ante
+          pulvinar nunc, id malesuada magna mi nec magna. Pellentesque ut lorem
+        
+        </span>
+      </div>
+    </article>
+    <script src="main.js"></script>
+    <script
+    src="https://kit.fontawesome.com/5605743a65.js"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
